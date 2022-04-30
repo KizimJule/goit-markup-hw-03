@@ -43,6 +43,10 @@ ul {
 }
 
 /*Шапка сайта*/
+.headder {
+  border-left: 15px;
+  border-right: 15px;
+}
 .logo {
   font-family: raleway, sans-serif;
   font-weight: 700;
@@ -95,15 +99,15 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  background-color: var(--title-text-color);
   color: var(--primary-white-color);
 }
 .button-hero {
   display: inline-block;
   width: 200px;
   height: 50px;
+  border: none;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -159,11 +163,27 @@ ul {
   padding-bottom: 94px;
   background-color: var(--background-second-color);
 }
+.photo {
+  width: 270px;
+  height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-photo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
+}
 .team .img {
-  margin-bottom: 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .section-title {
   text-align: center;
+  margin-bottom: 50px;
   color: var(--title-text-color);
 }
 .team .title {
@@ -171,11 +191,13 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
+  text-align: center;
   color: var(--title-text-color);
 }
 .team .position {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -225,6 +247,9 @@ ul {
   font-size: 16px;
   line-height: 1.63;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
   background-color: var(--background-second-color);
   color: var(--title-text-color);
 }
