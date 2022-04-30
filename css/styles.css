@@ -15,6 +15,15 @@
   --address-footer-color: rgba(255, 255, 255, 0.6);
   --background-hero-footer: #2f303a;
 }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 .body {
   font-family: roboto, sans-serif;
   font-size: 14px;
@@ -25,6 +34,12 @@
 }
 ul {
   list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
 }
 
 /*Шапка сайта*/
@@ -68,15 +83,16 @@ ul {
 }
 /*секция hero*/
 .hero {
+  text-align: center;
   background-color: var(--background-hero-footer);
 }
 .hero-title {
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
   background-color: var(--title-text-color);
   color: var(--primary-white-color);
 }
@@ -91,6 +107,11 @@ ul {
 }
 
 /*секция benefits*/
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: tomato;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -107,19 +128,31 @@ ul {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-/*секция our-work*/
+/*секция work*/
+.work {
+  padding-bottom: 94px;
+  background-color: aqua;
+}
 .work .section-title,
 .team .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 50px;
 }
 
-/*секция team*/
+/*секция our-team*/
+
 .our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--background-second-color);
+}
+.team .img {
+  margin-bottom: 30px;
 }
 .section-title {
   text-align: center;
@@ -129,6 +162,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 10px;
   color: var(--title-text-color);
 }
 .team .position {
@@ -141,6 +175,7 @@ ul {
 
 /*footer*/
 .footer .logo {
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 .footer .logo:hover,
@@ -155,6 +190,7 @@ ul {
 }
 
 .footer .location {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
 }
 .address-footer .link {
@@ -167,6 +203,10 @@ ul {
 }
 
 /*Страница Портфолио*/
+.portfolio-nav {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio {
   text-decoration: none;
 }
@@ -186,10 +226,14 @@ ul {
   color: var(--primary-white-color);
 }
 /*секция картинок-ссылок*/
+.portfolio .img {
+  margin-bottom: 10px;
+}
 .project .title-project {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: var(--title-text-color);
 }
 .project .title-one {

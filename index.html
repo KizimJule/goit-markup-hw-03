@@ -9,24 +9,32 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
     <header>
-      <nav class="nav">
-        <a class="logo" href="index.html"
-          ><span class="accent-logo" lang="en">Web</span><span lang="en">Studio</span>
-        </a>
-        <ul class="site-nav">
-          <li><a class="link activ" href="./index.html">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="index.html"
+            ><span class="accent-logo" lang="en">Web</span><span lang="en">Studio</span>
+          </a>
+          <ul class="site-nav">
+            <li><a class="link activ" href="./index.html">Студия</a></li>
+            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li>
+            <a class="link" href="emailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+          </li>
+          <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <li><a class="link" href="emailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -34,74 +42,105 @@
         <button type="button" class="button-hero">Заказать услугу</button>
       </section>
       <section class="benefits">
-        <!--Звголовок секции, который спрячется при форматировании-->
-        <h2 class="visually-hidden">Преимущества компании</h2>
-        <ul class="feature-list">
-          <li>
-            <h3 class="title">Внимание к деталям</h3>
-            <p class="desc">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Пунктуальность</h3>
-            <p class="desc">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Планирование</h3>
-            <p class="desc">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Современные технологии</h3>
-            <p class="desc">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <!--Звголовок секции, который спрячется при форматировании-->
+          <h2 class="visually-hidden">Преимущества компании</h2>
+          <ul class="feature-list">
+            <li>
+              <h3 class="title">Внимание к деталям</h3>
+              <p class="desc">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Пунктуальность</h3>
+              <p class="desc">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Планирование</h3>
+              <p class="desc">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Современные технологии</h3>
+              <p class="desc">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="work">
-        <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img src="./images/img.jpg" alt="Верстка" width="370" height="294" />
-          </li>
-          <li>
-            <img src="./images/img(1).jpg" alt="Разметка страницы" width="370" height="294" />
-          </li>
-          <li>
-            <img src="./images/img(2).jpg" alt="Работа с палитрой" width="370" height="294" />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul>
+            <li>
+              <img src="./images/img.jpg" alt="Верстка" width="370" height="294" />
+            </li>
+            <li>
+              <img src="./images/img(1).jpg" alt="Разметка страницы" width="370" height="294" />
+            </li>
+            <li>
+              <img src="./images/img(2).jpg" alt="Работа с палитрой" width="370" height="294" />
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="our-team">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="team">
-          <li>
-            <img src="./images/employee1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-            <h3 class="title">Игорь Демьяненко</h3>
-            <p class="position" lang="en">Product Designer</p>
-          </li>
-          <li>
-            <img src="./images/employee2.jpg" alt="Ольга Репина" width="270" height="260" />
-            <h3 class="title">Ольга Репина</h3>
-            <p class="position" lang="en">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/employee3.jpg" alt="Николай Тарасов" width="270" height="260" />
-            <h3 class="title">Николай Тарасов</h3>
-            <p class="position" lang="en">Marketing</p>
-          </li>
-          <li>
-            <img src="./images/employee4.jpg" alt="Михаил Ермаков" width="270" height="260" />
-            <h3 class="title">Михаил Ермаков</h3>
-            <p class="position" lang="en">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="team">
+            <li>
+              <img
+                class="img"
+                src="./images/employee1.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <h3 class="title">Игорь Демьяненко</h3>
+              <p class="position" lang="en">Product Designer</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./images/employee2.jpg"
+                alt="Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <h3 class="title">Ольга Репина</h3>
+              <p class="position" lang="en">Frontend Developer</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./images/employee3.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <h3 class="title">Николай Тарасов</h3>
+              <p class="position" lang="en">Marketing</p>
+            </li>
+            <li>
+              <img
+                class="img"
+                src="./images/employee4.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <h3 class="title">Михаил Ермаков</h3>
+              <p class="position" lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
+      <section class="section"></section>
     </main>
     <footer class="footer">
       <a class="logo" href="index.html"
