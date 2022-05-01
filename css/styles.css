@@ -14,7 +14,10 @@
   --background-second-color: #f5f4fa;
   --address-footer-color: rgba(255, 255, 255, 0.6);
   --background-hero-footer: #2f303a;
+  --border-hedder-color: #ececec;
+  --border-cards-portfolio: #eeeeee;
 }
+
 h1,
 h2,
 h3,
@@ -39,13 +42,14 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /*Шапка сайта*/
 .headder {
   border-left: 15px;
   border-right: 15px;
+  border-bottom: 1px solid var(--border-hedder-color);
 }
 .logo {
   font-family: raleway, sans-serif;
@@ -163,28 +167,27 @@ ul {
   padding-bottom: 94px;
   background-color: var(--background-second-color);
 }
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
 .photo {
   width: 270px;
   height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .team-photo {
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-white-color);
-}
-.team .img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--title-text-color);
 }
 .team .title {
   font-weight: 500;
@@ -259,9 +262,18 @@ ul {
   color: var(--primary-white-color);
 }
 /*секция картинок-ссылок*/
-.portfolio .img {
-  margin-bottom: 10px;
+.card {
+  width: 370px;
 }
+.project-card {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-left: 1px solid var(--border-cards-portfolio);
+  border-right: 1px solid var(--border-cards-portfolio);
+  border-bottom: 1px solid var(--border-cards-portfolio);
+}
+
 .project .title-project {
   font-size: 18px;
   line-height: 2;
