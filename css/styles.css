@@ -293,7 +293,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
+  }
 .portfolio-button .item + .item {
   margin-left: 8px;
 }
@@ -307,7 +307,8 @@ ul {
   line-height: 1.63;
   cursor: pointer;
   text-align: center;
-  display: block;
+  padding: 6px 22px;
+   display: block;
   background-color: var(--background-second-color);
   color: var(--title-text-color);
 }
