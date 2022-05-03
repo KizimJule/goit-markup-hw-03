@@ -28,9 +28,11 @@ ul {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
+
 ul {
   list-style: none;
 }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -44,17 +46,21 @@ ul {
   display: flex;
   align-items: center;
 }
+
 .site-nav {
   display: flex;
   margin-left: 93px;
 }
+
 .nav-item + .nav-item {
   margin-left: 50px;
 }
+
 .contact {
   display: flex;
   margin-left: auto;
 }
+
 .contact-item + .contact-item {
   margin-left: 50px;
 }
@@ -62,6 +68,7 @@ ul {
 .headder {
   border-bottom: 1px solid var(--border-hedder-color);
 }
+
 .logo {
   font-family: raleway, sans-serif;
   font-weight: 700;
@@ -69,13 +76,16 @@ ul {
   text-decoration: none;
   color: var(--title-text-color);
 }
+
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
 }
+
 .accent-logo {
   color: var(--accent-color);
 }
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -85,6 +95,7 @@ ul {
   text-decoration: none;
   color: var(--title-text-color);
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -293,7 +304,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  }
+}
 .portfolio-button .item + .item {
   margin-left: 8px;
 }
@@ -308,7 +319,7 @@ ul {
   cursor: pointer;
   text-align: center;
   padding: 6px 22px;
-   display: block;
+  display: block;
   background-color: var(--background-second-color);
   color: var(--title-text-color);
 }
@@ -318,33 +329,22 @@ ul {
   color: var(--primary-white-color);
 }
 /*секция картинок-ссылок*/
+
 .project {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
 }
 
 .project .card {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
-   margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 .project .card:nth-child(3n) {
   margin-right: 0;
-  } 
+}
 .project .card:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-}
-
-
-}
-.project-card {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 20px;
-  border-left: 1px solid var(--border-cards-portfolio);
-  border-right: 1px solid var(--border-cards-portfolio);
-  border-bottom: 1px solid var(--border-cards-portfolio);
+  margin-bottom: 0px;
 }
 
 .project .title-project {
@@ -356,4 +356,12 @@ ul {
 }
 .project .title-one {
   color: var(--primary-text-color);
+}
+.project-card {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-left: 1px solid var(--border-cards-portfolio);
+  border-right: 1px solid var(--border-cards-portfolio);
+  border-bottom: 1px solid var(--border-cards-portfolio);
 }
