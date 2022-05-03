@@ -37,13 +37,29 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
 }
 
 /*Шапка сайта*/
+.nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-item + .nav-item {
+  margin-left: 50px;
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+.contact-item + .contact-item {
+  margin-left: 50px;
+}
+
 .headder {
-  border-left: 15px;
-  border-right: 15px;
   border-bottom: 1px solid var(--border-hedder-color);
 }
 .logo {
@@ -60,8 +76,10 @@ ul {
 .accent-logo {
   color: var(--accent-color);
 }
-
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -72,6 +90,7 @@ ul {
   color: var(--accent-color);
 }
 .contact .link {
+  display: block;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -84,6 +103,7 @@ ul {
 .site-nav .activ {
   color: var(--accent-color);
 }
+
 /*секция hero*/
 .hero {
   text-align: center;
@@ -123,6 +143,13 @@ ul {
 }
 
 /*секция benefits*/
+.feature-list {
+  display: flex;
+}
+.feature-list .item + .item {
+  margin-left: 30px;
+}
+
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -139,6 +166,9 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.feature-list .item {
+  width: 270px;
+}
 .feature-list .title {
   font-weight: 700;
   line-height: 1.14;
@@ -147,6 +177,12 @@ ul {
 }
 
 /*секция work*/
+.work-img {
+  display: flex;
+}
+.work-img .item + .item {
+  margin-left: 30px;
+}
 .work {
   padding-bottom: 94px;
 }
@@ -159,7 +195,12 @@ ul {
 }
 
 /*секция our-team*/
-
+.team {
+  display: flex;
+}
+.photo + .photo {
+  margin-left: 30px;
+}
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -209,7 +250,6 @@ ul {
   display: inline-block;
   line-height: 1.19;
   color: var(--primary-white-color);
-  outline: 2px solid red;
 }
 .footer .logo:hover,
 .footer .logo:focus {
@@ -222,34 +262,25 @@ ul {
 }
 .address {
   font-style: normal;
-  outline: 2px solid red;
 }
 
 .footer .location {
   margin-top: 20px;
   color: var(--primary-white-color);
-  outline: 2px solid red;
 }
 .address-footer .link {
   display: inline-block;
   margin-top: 9px;
   text-decoration: none;
   color: var(--address-footer-color);
-  outline: 2px solid red;
 }
 .address-footer .link:hover,
 .address-footer .link:focus {
   color: var(--accent-color);
 }
-/* .address-footer .link:hover {
-  display: inline-block;
-  margin-bottom: 9px;
-  text-decoration: none;
-  color: var(--address-footer-color);
-  outline: 2px solid red;
-} */
 
 /*Страница Портфолио*/
+
 .portfolio-nav {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -258,15 +289,25 @@ ul {
   text-decoration: none;
 }
 /*кнопки навигации портфолио*/
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-button .item + .item {
+  margin-left: 8px;
+}
+
 .portfolio-nav .button {
+  border: none;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   cursor: pointer;
-  border: none;
-  border-radius: 4px;
   text-align: center;
+  display: block;
   background-color: var(--background-second-color);
   color: var(--title-text-color);
 }
@@ -276,8 +317,25 @@ ul {
   color: var(--primary-white-color);
 }
 /*секция картинок-ссылок*/
-.card {
-  width: 370px;
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.project .card {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+   margin-bottom: 30px; 
+}
+.project .card:nth-child(3n) {
+  margin-right: 0;
+  } 
+.project .card:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+
 }
 .project-card {
   padding-top: 20px;
