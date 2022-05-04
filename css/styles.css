@@ -44,11 +44,14 @@ ul {
 }
 
 /*Шапка сайта*/
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .nav {
   display: flex;
   align-items: center;
 }
-
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -115,6 +118,10 @@ ul {
 }
 .site-nav .activ {
   color: var(--accent-color);
+}
+.contact-item .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /*секция hero*/
@@ -200,7 +207,7 @@ ul {
   padding-bottom: 94px;
 }
 .work .section-title,
-.team .section-title {
+.our-team .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -260,7 +267,8 @@ ul {
 
 /*footer*/
 .footer .logo {
-  display: inline-block;
+  display: block;
+  margin-bottom: 20px;
   line-height: 1.19;
   color: var(--primary-white-color);
 }
@@ -278,18 +286,21 @@ ul {
 }
 
 .footer .location {
-  margin-top: 20px;
+  margin-bottom: 9px;
   color: var(--primary-white-color);
 }
 .address-footer .link {
   display: inline-block;
-  margin-top: 9px;
   text-decoration: none;
+  /* margin-bottom: 9px; */
   color: var(--address-footer-color);
 }
 .address-footer .link:hover,
 .address-footer .link:focus {
   color: var(--accent-color);
+}
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /*Страница Портфолио*/
